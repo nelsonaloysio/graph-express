@@ -11,8 +11,8 @@ try:
     from torch_geometric.utils.convert import from_networkx as nx2pyg
 except ImportError:
     pyg_data = None
-    pyg_from_networkx = lambda x: None
-    pyg_to_networkx = lambda x, to_undirected: None
+    nx2pyg = lambda x: None
+    pyg2nx = lambda x, to_undirected: None
 
 
 class Convert(metaclass=ABCMeta):

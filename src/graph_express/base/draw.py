@@ -421,7 +421,7 @@ class Draw(metaclass=ABCMeta):
 
         sns.heatmap(
             df.divide(df.max(), axis=0).round(2),
-            annot=True,
+            annot=False,
             ax=ax,
             center=.5,
             cmap="RdYlBu_r",
